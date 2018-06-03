@@ -1,5 +1,5 @@
 Bootstrap: docker
-From: cnc_base
+From: CNC-UMCG/cnc_base
 
 %post
 
