@@ -1,4 +1,4 @@
-Bootstrap: docker
+Bootstrap: singularity
 From: CNC-UMCG/cnc_base
 
 %post
