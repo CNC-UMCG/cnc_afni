@@ -1,4 +1,4 @@
-Bootstrap: singularity
+Bootstrap: shub
 From: CNC-UMCG/cnc_base
 
 %post
