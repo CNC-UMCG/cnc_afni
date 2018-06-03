@@ -2,7 +2,13 @@ Bootstrap: docker
 From: cnc_base
 
 %post
+
+  # afni dependencies
+  apt-get install -y openmotif
+  
   # install afni
-    wget https://afni.nimh.nih.gov/pub/dist/tgz/linux_ubuntu_16_64.tgz
-    tar xvzf linux_ubuntu_16_64.tgz -C /usr/share/
+  wget https://afni.nimh.nih.gov/pub/dist/tgz/linux_ubuntu_16_64.tgz
+  tar xvzf linux_ubuntu_16_64.tgz -C /usr/share/
+    
+  mv /usr/share/linux_ubuntu /usr/share/afni
     
