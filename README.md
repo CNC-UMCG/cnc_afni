@@ -1,2 +1,3 @@
 # cnc_afni
-Afni package on top of cnc_base
+
+https://github.com/CNC-UMCG/cnc_base/blob/master/README.md
