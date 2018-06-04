@@ -8,7 +8,9 @@ From: CNC-UMCG/cnc_r
 %post
 
   # afni dependencies
-  apt-get install -y tcsh libxp6 xfonts-base python-qt4 libmotif4 libmotif-dev motif-clients gsl-bin netpbm xvfb gnome-tweak-tool libjpeg62 xterm gedit evince
+  ## apt-get install -y libmotif4 libmotif-dev motif-clients gsl-bin netpbm xvfb gnome-tweak-tool libjpeg62 xterm gedit evince
+  apt-get install -y libxp6 tcsh
+  apt-get install -y python-qt4 r-base
 
   apt-get update
 
