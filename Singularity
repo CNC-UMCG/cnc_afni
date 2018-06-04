@@ -1,6 +1,10 @@
 Bootstrap: shub
 From: CNC-UMCG/cnc_r
 
+%environment
+    export R_LIBS=$HOME/R
+    mkdir $R_LIBS
+
 %post
 
   # afni dependencies
@@ -15,3 +19,9 @@ From: CNC-UMCG/cnc_r
     
   mv /usr/share/linux_ubuntu /usr/share/afni
     
+  echo "PATH=$PATH:/usr/share/afni" >> /etc/profile
+  echo "export R_LIBS=$HOME/R" >> /etc/profile
+ 
+  curl -O https://afni.nimh.nih.gov/pub/dist/src/scripts_src/@add_rcran_ubuntu.tcsh
+  tcsh @add_rcran_ubuntu.tcsh
+
