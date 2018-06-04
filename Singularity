@@ -20,7 +20,7 @@ From: CNC-UMCG/cnc_r
   wget https://afni.nimh.nih.gov/pub/dist/tgz/linux_ubuntu_16_64.tgz
   tar xvzf linux_ubuntu_16_64.tgz -C /usr/share/
     
-  mv /usr/share/linux_ubuntu /usr/share/afni
+  mv /usr/share/linux_ubuntu_16_64 /usr/share/afni
     
   echo "PATH=$PATH:/usr/share/afni" >> /etc/profile
   echo "export R_LIBS=$HOME/R" >> /etc/profile
