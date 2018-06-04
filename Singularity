@@ -25,3 +25,6 @@ From: CNC-UMCG/cnc_r
   curl -O https://afni.nimh.nih.gov/pub/dist/src/scripts_src/@add_rcran_ubuntu.tcsh
   tcsh @add_rcran_ubuntu.tcsh
 
+  rPkgsInstall -pkgs ALL
+
+  afni_system_check.py -check_all > out.afni_system_check.txt
