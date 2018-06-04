@@ -9,11 +9,12 @@ From: CNC-UMCG/cnc_r
 
   # afni dependencies
   ## apt-get install -y libmotif4 libmotif-dev motif-clients gsl-bin netpbm xvfb gnome-tweak-tool libjpeg62 xterm gedit evince
+  
+  echo "deb http://security.ubuntu.com/ubuntu precise-security main" >> /etc/apt/sources.list
+  apt-get update
+  
   apt-get install -y libxp6 tcsh
   apt-get install -y python-qt4 r-base
-
-  apt-get update
-
   
   # install afni
   wget https://afni.nimh.nih.gov/pub/dist/tgz/linux_ubuntu_16_64.tgz
